@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="page-wrap">
+<h1>Stem Quiz </h1>
+
+<form action="quiz.php" method="post" id="stemQuiz">
+  <li>
+  
+  	<h3> First question </h3>
+    
+    <div>
+    	<input type="radio" name="question-1-answer" id="question-1-answer-A"  			value="A"/>    
+        <label for="question-1-answers-A">A)  </label> 
+<!-- the ">" allows it to only apply to whats directly underneath in A -->
+    </div>
+        
+    <div>
+        <input type="radio" name="question-1-answer" id="question-1-answer-B"  			value="B"/>
+        <label for="question-1-answers-B">B)B  </label>
+    </div>
+    
+    <div>
+    	<input type="radio" name="question-1-answer" id="question-1-answer-C"  			value="C"/>
+        <label for="question-1-answers-C">C) C </label>
+    </div>
+    
+    <div>
+    	<input type="radio" name="question-1-answer" id="question-1-answer-D"  			value="D"/>
+        <label for="question-1-answers-D">D)  </label> 
+    </div>
+
+
+
+<input type="submit" value="Submit Quiz" name="Submit1 />
+
+</form>
+
+<?php
+
+    f ( isset( $_POST['Submit1'] ) ) {
+    $answer1 = $_POST['question-1-answer'];
+
+    
+    $job1 = 0;
+    
+    echo "hi";
+    
+    if ($answer1 == "B") {$job1 = $job1 + 1
+    echo "hi";}
+    
+    echo "hi";
+    
+    if ($job1 == "1") {
+    	echo "hi";
+    	echo "you match with";
+        }
+    }
+
+?>
+
+</div>
+</body>
+</html>
