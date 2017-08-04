@@ -33,25 +33,20 @@
 
 
 
-<input type="submit" value="Submit Quiz" name="Submit1 />
+<input type="submit" value="Submit Quiz" name="submit" />
 
 </form>
 
 <?php
 
 if (isset($_POST['submit'])) {
-    
+    $answer1 = $_POST['question-1-answer'];
+                                               
     $job1 = 0;
     
-    echo "hi";
-    
-    if ($answer1 == "B") {$job1 = $job1 + 1
-    echo "hi";}
-    
-    echo "hi";
+    if ($answer1 == "B") {$job1++;}
     
     if ($job1 == "1") {
-    	echo "hi";
     	echo "you match with";
         }
     }
