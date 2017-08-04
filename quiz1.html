@@ -5,7 +5,7 @@
 <div id="page-wrap">
 <h1>Stem Quiz </h1>
 
-<form action="quiz.php" method="post" id="stemQuiz">
+<form action="" method="post" id="stemQuiz">
   <li>
   
   	<h3> First question </h3>
@@ -39,7 +39,7 @@
 
 <?php
 
-
+if (isset($_POST['submit'])) {
     
     $job1 = 0;
     
@@ -54,7 +54,7 @@
     	echo "hi";
     	echo "you match with";
         }
-    
+    }
 
 ?>
 
